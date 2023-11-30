@@ -1,0 +1,13 @@
+-- Active: 1701343330698@@127.0.0.1@3306@aulapdo
+CREATE TABLE tb_produtos(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome_produto VARCHAR (200),
+    valor FLOAT(4,2),
+    data_validade DATE
+);
+
+INSERT INTO tb_produtos(nome_produto,valor,data_validade) VALUES("arroz",22.99,'2025-05-01');
+INSERT INTO tb_produtos(nome_produto,valor,data_validade) VALUES("feijão",7.99,'2030-05-01');
+INSERT INTO tb_produtos(nome_produto,valor,data_validade) VALUES("monster",8.75,'2025-01-15');
+
+SELECT * FROM tb_produtos;
